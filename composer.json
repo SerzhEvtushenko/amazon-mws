@@ -1,0 +1,22 @@
+{
+  "name": "serzh/amazon-mws",
+  "description": "Amazon Marketplace Web Service  PHP Client Library",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Sergey Evtushenko",
+      "email": "s.evtyshenko@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4"
+  },
+  "autoload": {
+    "classmap": [
+      "src/"
+    ]
+  },
+  "include-path": [
+    "src/"
+  ]
+}
