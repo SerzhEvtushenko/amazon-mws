@@ -423,6 +423,11 @@ class MarketplaceWebService_Model_SubmitFeedRequest extends MarketplaceWebServic
         return !is_null($this->fields['FeedType']['FieldValue']);
     }
 
+    public function getFeedOptions()
+    {
+        return $this->fields['FeedOptions']['FieldValue'];
+    }
+
     /**
      * Sets the value of the FeedOptions property.
      *
