@@ -1013,10 +1013,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
         $parsedHeader = $this->parseHttpHeader($header);
 
         require_once('MarketplaceWebService/Model/ResponseHeaderMetadata.php');
-        $responseHeaderMetadata = new MarketplaceWebService_Model_ResponseHeaderMetadata(
-            $parsedHeader['x-mws-request-id'],
-            $parsedHeader['x-mws-response-context'],
-            $parsedHeader['x-mws-timestamp']);
+        $responseHeaderMetadata = new MarketplaceWebService_Model_ResponseHeaderMetadata($parsedHeader);
 
         $code = (int)curl_getinfo($this->curlClient, CURLINFO_HTTP_CODE);
 
