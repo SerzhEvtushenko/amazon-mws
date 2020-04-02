@@ -879,7 +879,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
     /**
      * Invoke request and return response
      */
-    private function invoke(array $converted, $dataHandle = null)
+    public function invoke(array $converted, $dataHandle = null)
     {
 
         $parameters   = $converted[ CONVERTED_PARAMETERS_KEY ];
